@@ -1,70 +1,39 @@
-function showabout() {
-    $("#about_container").css("display", "inherit");
-    $("#about_container").addClass("animated slideInLeft");
-    setTimeout(function() {
-        $("#about_container").removeClass("animated slideInLeft");
-    }, 800);
-}
-function closeabout() {
-    $("#about_container").addClass("animated slideOutLeft");
-    setTimeout(function() {
-        $("#about_container").removeClass("animated slideOutLeft");
-        $("#about_container").css("display", "none");
-    }, 800);
-}
-function showwork() {
-    $("#work_container").css("display", "inherit");
-    $("#work_container").addClass("animated slideInRight");
-    setTimeout(function() {
-        $("#work_container").removeClass("animated slideInRight");
-    }, 800);
-}
-function closework() {
-    $("#work_container").addClass("animated slideOutRight");
-    setTimeout(function() {
-        $("#work_container").removeClass("animated slideOutRight");
-        $("#work_container").css("display", "none");
-    }, 800);
-}
-function showcontact() {
-    $("#contact_container").css("display", "inherit");
-    $("#contact_container").addClass("animated slideInUp");
-    setTimeout(function() {
-        $("#contact_container").removeClass("animated slideInUp");
-    }, 800);
-}
-function closecontact() {
-    $("#contact_container").addClass("animated slideOutDown");
-    setTimeout(function() {
-        $("#contact_container").removeClass("animated slideOutDown");
-        $("#contact_container").css("display", "none");
-    }, 800);
-}
-setTimeout(function() {
-    $("#loading").addClass("animated fadeOut");
-    setTimeout(function() {
-        $("#loading").removeClass("animated fadeOut");
-        $("#loading").css("display", "none");
-        $("#box").css("display", "none");
-        $("#about").removeClass("animated fadeIn");
-        $("#contact").removeClass("animated fadeIn");
-        $("#work").removeClass("animated fadeIn");
-    }, 1000);
-}, 1500);
+const handleFirstTab = (e) => {
+  if(e.key === 'Tab') {
+    document.body.classList.add('user-is-tabbing')
 
-document.addEventListener("DOMContentLoaded", function() {
-    emailjs.init('ZM-Kgmt4CmZq27aVX'); 
+    window.removeEventListener('keydown', handleFirstTab)
+    window.addEventListener('mousedown', handleMouseDownOnce)
+  }
 
-    document.getElementById('contact_form').addEventListener('submit', function(event) {
-        event.preventDefault();
+}
 
-        const form = event.target;
+const handleMouseDownOnce = () => {
+  document.body.classList.remove('user-is-tabbing')
 
-        emailjs.sendForm('service_nccv8s2', 'template_ok5912i', form)
-            .then((result) => {
-                form.reset();
-            }, (error) => {
-                console.error(error)
-            });
-    });
-})
+  window.removeEventListener('mousedown', handleMouseDownOnce)
+  window.addEventListener('keydown', handleFirstTab)
+}
+
+window.addEventListener('keydown', handleFirstTab)
+
+const backToTopButton = document.querySelector(".back-to-top");
+let isBackToTopRendered = false;
+
+let alterStyles = (isBackToTopRendered) => {
+  backToTopButton.style.visibility = isBackToTopRendered ? "visible" : "hidden";
+  backToTopButton.style.opacity = isBackToTopRendered ? 1 : 0;
+  backToTopButton.style.transform = isBackToTopRendered
+    ? "scale(1)"
+    : "scale(0)";
+};
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 700) {
+    isBackToTopRendered = true;
+    alterStyles(isBackToTopRendered);
+  } else {
+    isBackToTopRendered = false;
+    alterStyles(isBackToTopRendered);
+  }
+});
