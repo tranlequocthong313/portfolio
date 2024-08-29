@@ -4,390 +4,323 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trần Lê Quốc Thống - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tran Le Quoc Thong</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="icon" href="./images/galleries/unnamed.png" type="image/png">
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <h1>Trần Lê Quốc Thống 🎉</h1>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/tranlequocthong313/" target="_blank">Tran Le
-                    Quoc Thong <i class="fab fa-linkedin"></i></a> |
-                GitHub: <a href="https://github.com/tranlequocthong313" target="_blank">tranlequocthong313 <i
-                        class="fab fa-github"></i></a></p>
-            <p>Phone: 0909943501📱 | Email: <a href="mailto:tranlequocthong313@gmail.com">tranlequocthong313@gmail.com
-                    📧</a></p>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="particles-js"></div>
+    <div id="box">
+        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
+        <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
+    </div>
+    <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">about</a>
+    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;">project</a>
+    <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">contact</a>
+    <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
+        <h1>Tran Le Quoc Thong</h1>
+        <h2>Software Developer</h2>
+        <div id="menu">
+            <a onclick="showabout()">about</a>
+            <a onclick="showwork()">project</a>
+            <a onclick="showcontact()">contact</a>
         </div>
-    </header>
-    <main>
-        <section id="objectives">
-            <div class="container">
-                <h2>Objectives 🎯</h2>
-                <p>As a dedicated full-stack developer, my objective is to leverage my skills in front-end and back-end
-                    technologies to create innovative and efficient solutions. I aim to continuously enhance my
-                    expertise in emerging technologies and contribute to impactful projects.</p>
+        <table>
+            <tr>
+                <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social"
+                        href="https://www.linkedin.com/in/tranlequocthong313/" target="_blank"><i
+                            class="fab fa-linkedin"></i></a></td>
+                <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social"
+                        href="https://github.com/tranlequocthong313/" target="_blank"><i class="fab fa-github"></i></a>
+                </td>
+                <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social"
+                        href="https://zalo.me/0909943501" target="_blank"><i class="fa-solid fa-phone"></i></a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="work_container" class="container">
+        <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+        <h1>projects.</h1>
+        <section>
+            <div class="project-item">
+                <h2>Audio Steganography</h2>
+                <p>
+                    Conducted in-depth research on data hiding algorithms to identify effective techniques for embedding
+                    and extracting information.
+                    Implemented data embedding and extraction algorithms using Python, Django, ReactJS, and TypeScript,
+                    with encryption and compression to ensure data integrity and minimal audio quality impact.
+                    Applied compression libraries (zlib) for optimized storage and preservation of audio fidelity.
+                    Secured data before embedding with AES encryption to enhance overall data security.
+                </p>
+                <div id="used">
+                    <div><i class="fas fa-circle"></i>&nbsp;Python</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Django</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;ReactJS</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;TypeScript</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;MUI</div>
+                </div>
+                <a href="https://github.com/tranlequocthong313/CipherNest" target="_blank" class="btn_one">View Source
+                    Code</a>
+                <a href="#" target="_blank" class="btn_two">View Live Demo</a>
+            </div>
+
+            <div class="project-item">
+                <h2>Football Field Management</h2>
+                <p>
+                    Led team efforts using structured Project Management, ensuring effective planning and risk
+                    management.
+                    Collaborated on UI/UX design with Figma and React Native, creating a user-friendly interface.
+                    Integrated FCM for push notifications in React Native, enhancing real-time user engagement.
+                    Implemented JWT for secure authentication, ensuring data protection.
+                    Integrated Zalo and Messenger for seamless customer support.
+                </p>
+                <div id="used">
+                    <div><i class="fas fa-circle"></i>&nbsp;React Native</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;MySQL</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Firebase Cloud Messaging</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;VnPay</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Momo</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Zalo</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Messenger</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Cloudinary</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Figma</div>
+                </div>
+                <a href="https://github.com/tranlequocthong313/FutManagerBE" target="_blank" class="btn_one">View
+                    Source Code</a>
+                <a href="https://futmanagerbe.onrender.com" target="_blank" class="btn_two">View Live Demo</a>
+            </div>
+
+            <div class="project-item">
+                <h2>Maintenance Management</h2>
+                <p>
+                    Designed and implemented the system workflow and database schema using Java Spring MVC, Hibernate,
+                    and MySQL.
+                    Integrated Google Calendar API for real-time scheduling and maintenance management.
+                    Implemented incident tracking and repair reporting to monitor system performance.
+                    Managed equipment location tracking across multiple sites and recorded location history.
+                    Utilized Spring Security with JWT for secure user authentication.
+                    Built a client-side discussion forum with ReactJS and TypeScript.
+                </p>
+                <div id="used">
+                    <div><i class="fas fa-circle"></i>&nbsp;Java</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Spring MVC</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Spring Security</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Hibernate</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;MySQL</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;ReactJS</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;TypeScript</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Google Calendar API</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;MUI Bootstrap</div>
+                </div>
+                <a href="https://github.com/tranlequocthong313/apparatus" target="_blank" class="btn_one">View
+                    Source Code</a>
+                <a href="#" target="_blank" class="btn_two">View Live Demo</a>
+            </div>
+
+            <div class="project-item">
+                <h2>Apartment Management</h2>
+                <p>
+                    Created business specifications and designed the database schema using Django (Python) for the
+                    backend, MySQL for database management, and React Native for the frontend.
+                    Developed an automated invoicing system with cron jobs to enhance billing efficiency.
+                    Integrated Firebase for notifications and real-time chat.
+                    Incorporated Momo & VnPay for secure payments, Twilio for OTP and SMS, and Cloudinary for media file
+                    management.
+                </p>
+                <div id="used">
+                    <div><i class="fas fa-circle"></i>&nbsp;Django</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Python</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;MySQL</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;React Native</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Javascript</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Firestore</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Firebase Cloud Messaging</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Momo</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;VnPay</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Twilio</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Cloudinary</div>
+                </div>
+                <a href="https://github.com/tranlequocthong313/OceanView_BE" target="_blank" class="btn_one">View
+                    Source Code</a>
+                <a href="https://oceanview-be.onrender.com" target="_blank" class="btn_two">View Live Demo</a>
+            </div>
+
+            <div class="project-item">
+                <h2>Clinic Management</h2>
+                <p>
+                    Led business analysis and designed the database schema and system workflow using Python and Flask
+                    for backend, and MySQL for database management.
+                    Implemented online appointment scheduling with Twilio for notifications and OTP verification.
+                    Integrated VnPay for patient payments.
+                    Developed PDF report generation for billing and medical records.
+                </p>
+                <div id="used">
+                    <div><i class="fas fa-circle"></i>&nbsp;Python</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Flask</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;MySQL</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Twilio</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;VnPay</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Bootstrap</div>
+                </div>
+                <a href="https://github.com/tranlequocthong313/private_clinic" target="_blank" class="btn_one">View
+                    Source
+                    Code</a>
+                <a href="https://private-clinic.onrender.com" target="_blank" class="btn_two">View Live Demo</a>
+            </div>
+
+            <div class="project-item">
+                <h2>E-Learning Platform</h2>
+                <p>
+                    Designed and implemented the backend using Node.js with Express and MongoDB, including robust
+                    database schema creation and efficient data management.
+                    Integrated Firebase for secure user authentication and authorization.
+                    Developed learning features, blog posts, and admin dashboards for streamlined administration.
+                    Utilized YouTube API to fetch and store video data in the database for new courses, ensuring
+                    up-to-date content management.
+                </p>
+                <div id="used">
+                    <div><i class="fas fa-circle"></i>&nbsp;Node.js</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Express</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;MongoDB</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Firebase Hosting</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Socket.io</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Google YouTube API</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Bootstrap</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;SCSS</div>
+                </div>
+                <a href="https://github.com/tranlequocthong313/f8cloneBE" target="_blank" class="btn_one">View Source
+                    Code</a>
+                <a href="#" target="_blank" class="btn_two">View Live Demo</a>
             </div>
         </section>
-        <section id="about-me">
-            <div class="container">
-                <h2>About Me 🤓</h2>
-                <p>Passionate about technology and innovation, I have a strong background in developing applications and
-                    managing projects. My experience spans various technologies and roles, and I am committed to
-                    delivering high-quality work. I enjoy exploring new challenges and continuously learning to stay
-                    ahead in the tech field.</p>
-            </div>
+    </div>
+    <div id="about_container" class="container">
+        <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+        <h1>about.</h1>
+        <section>
+            <h2>about me</h2>
+            <p>
+                I am a final-year IT student with a deep passion for web development and a strong foundation in both
+                frontend and backend technologies. My journey in tech has equipped me with a versatile skill set,
+                allowing me to create dynamic and user-friendly web applications. I have a keen eye for detail, a love
+                for problem-solving, and a dedication to continuous learning.
+            </p>
+            <p>
+                My experience extends beyond coding; I have a solid understanding of database design, ensuring that the
+                systems I develop are both efficient and scalable. I also prioritize creating intuitive and accessible
+                user interfaces, believing that a well-designed UI/UX is key to the success of any application.
+                Additionally, I have experience in managing small teams, where I've honed my leadership and
+                collaboration skills, ensuring that projects are completed on time and to the highest standard.
+            </p>
+            <p>
+                I am highly motivated, quick to adapt to new technologies, and eager to contribute to innovative
+                projects in a dynamic environment. Whether working independently or as part of a team, I am committed to
+                delivering high-quality solutions that meet and exceed expectations.
+            </p>
         </section>
         <section id="skills">
-            <div class="container">
-                <h2>Skills 💪</h2>
-                <ul>
-                    <li>Python | JavaScript | TypeScript | Java | SQL | Django | Spring | Node | Flask | Express | NoSQL
-                        | Redis | Git</li>
-                    <li>Ubuntu | Nvim | Docker | Jest | Pytest | Unit Testing | OOP | React | Vue | Unity | Game
-                        Development</li>
-                    <li>Backend | Frontend | Full-Stack | English, Vietnamese – All professional proficiency or above
-                    </li>
-                </ul>
-            </div>
-        </section>
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <!-- Programming Languages -->
+                <div class="skill-item"><i class="fa-brands fa-python"></i>
+                    <p>Python</p>
+                </div>
+                <div class="skill-item"><i class="fa-brands fa-js"></i>
+                    <p>Javascript</p>
+                </div>
+                <div class="skill-item"><i class="fa-brands fa-java"></i>
+                    <p>Java</p>
+                </div>
 
-        <section id="blogs">
-            <div class="container">
-                <h2>Blogs 📚</h2>
-                <div class="blog">
-                    <h3><a href="https://viblo.asia/p/su-that-ve-hoisting-trong-javascript-ma-co-the-ban-chua-biet-WR5JRAM74Gv"
-                            target="_blank">Sự Thật Về Hoisting Trong JavaScript Mà Có Thể Bạn Chưa Biết</a> <i
-                            class="fas fa-blog"></i></h3>
-                    <p>Khám phá các khái niệm liên quan đến hoisting trong JavaScript và hiểu cách nó ảnh hưởng đến mã
-                        của bạn.</p>
+                <!-- Frameworks -->
+                <div class="skill-item"><i class="fas fa-layer-group"></i>
+                    <p>Django</p>
                 </div>
-                <!-- Thêm các bài blog khác ở đây -->
-            </div>
-        </section>
+                <div class="skill-item"><i class="fas fa-layer-group"></i>
+                    <p>Express</p>
+                </div>
+                <div class="skill-item"><i class="fas fa-layer-group"></i>
+                    <p>Flask</p>
+                </div>
+                <div class="skill-item"><i class="fas fa-layer-group"></i>
+                    <p>Spring MVC</p>
+                </div>
+                <div class="skill-item"><i class="fab fa-react"></i>
+                    <p>ReactJS</p>
+                </div>
+                <div class="skill-item"><i class="fab fa-react"></i>
+                    <p>React Native</p>
+                </div>
+                <div class="skill-item"><i class="fab fa-vuejs"></i>
+                    <p>VueJS</p>
+                </div>
 
-        <section id="projects">
-            <div class="container">
-                <h2>Projects 🚀</h2>
-                <div class="project">
-                    <h3>CipherNest 🔐</h3>
-                    <a href="https://github.com/tranlequocthong313/CipherNest" target="_blank">GitHub Repo <i
-                            class="fab fa-github"></i></a>
-                    <p>Project Description: CipherNest is an audio steganography application designed to securely encode
-                        hidden messages within audio files, ensuring both confidentiality and efficient transmission of
-                        data.</p>
-                    <p>Frontend Development: Created a responsive and user-friendly interface using React.js and
-                        TypeScript.</p>
-                    <p>Backend Development: Developed backend functionalities with Django, including API creation and
-                        server-side logic management.</p>
-                    <p>Testing: Performed extensive testing, including unit, integration, and end-to-end tests.</p>
+                <!-- Databases -->
+                <div class="skill-item"><i class="fas fa-database"></i>
+                    <p>MySQL</p>
                 </div>
-                <div class="project">
-                    <h3>Apparatus 🛠️</h3>
-                    <a href="https://github.com/tranlequocthong313/apparatus" target="_blank">GitHub Repo <i
-                            class="fab fa-github"></i></a>
-                    <p>Project Description: Apparatus is a comprehensive tool for managing maintenance and repair
-                        schedules within an organization, featuring scheduling, tracking, reporting functionalities, and
-                        a discussion forum for collaborative problem-solving.</p>
-                    <p>Frontend Development: Implemented an intuitive and responsive user interface using TypeScript and
-                        React.js.</p>
-                    <p>Backend Development: Utilized Java, Spring MVC, and Hibernate for backend services, focusing on
-                        API development and server-side processing.</p>
-                    <p>Database Management: Created and managed a MySQL database schema.</p>
-                    <p>Integration: Integrated Google Calendar API for synchronization with users' Google Calendars.</p>
+                <div class="skill-item"><i class="fas fa-database"></i>
+                    <p>MSSQL</p>
                 </div>
-                <div class="project">
-                    <h3>FutManager ⚽</h3>
-                    <a href="https://github.com/tranlequocthong313/FutManagerBE" target="_blank">GitHub Repo <i
-                            class="fab fa-github"></i></a>
-                    <p>Project Description: FutManager is a mobile app designed for efficient management and booking of
-                        football fields, featuring real-time field availability, reservation capabilities, and
-                        integrated notifications.</p>
-                    <p>Project Management: Directed the project from initiation to completion.</p>
-                    <p>Frontend Development: Built the mobile app with React Native.</p>
-                    <p>Backend Development: Developed backend services using Django and integrated Firebase Cloud
-                        Messaging.</p>
-                    <p>Database Management: Designed a MySQL database to manage user data and bookings.</p>
+                <div class="skill-item"><i class="fas fa-database"></i>
+                    <p>MongoDB</p>
                 </div>
-                <div class="project">
-                    <h3>OceanView 🌊</h3>
-                    <a href="https://github.com/tranlequocthong313/OceanView_BE" target="_blank">GitHub Repo <i
-                            class="fab fa-github"></i></a>
-                    <p>Project Description: OceanView is an application for managing condominium properties, including
-                        booking facilities, managing tenant requests, and handling payments. Integrates real-time chat,
-                        push notifications, and various payment gateways.</p>
-                    <p>Frontend Development: Developed the mobile application using React Native.</p>
-                    <p>Backend Development: Built and maintained backend services using Django.</p>
-                    <p>Real-Time Chat Integration: Implemented Firestore for real-time chat functionality.</p>
-                    <p>Payment Integration: Integrated MoMo and VNPay payment gateways.</p>
-                    <p>Media Management: Utilized Cloudinary for media asset management.</p>
-                    <p>Caching: Employed Redis for improved application performance.</p>
-                    <p>Account Verification: Integrated Twilio for account verification and OTP functionality.</p>
+                <div class="skill-item"><i class="fas fa-database"></i>
+                    <p>Redis</p>
                 </div>
-                <div class="project">
-                    <h3>F8 Clone 🎓</h3>
-                    <a href="https://github.com/tranlequocthong313/f8cloneBE" target="_blank">GitHub Repo <i
-                            class="fab fa-github"></i></a>
-                    <p>Project Description: F8 Clone is a personal project replicating the <a
-                            href="https://fullstack.edu.vn/" target="_blank">f8.edu.vn</a> platform, featuring
-                        course management, chapters, lessons, interactive comments, and a forum for student-instructor
-                        discussions.</p>
-                    <p>Frontend Development: Built the application using ReactJS, styled with Bootstrap and SCSS for
-                        responsive design.</p>
-                    <p>Real-Time Interaction: Implemented real-time commenting using Socket.io for seamless
-                        communication.</p>
-                    <p>Search System: Developed a comprehensive search feature to find courses, articles, and users
-                        across the platform.</p>
-                    <p>Backend Integration: Utilized Firebase for authentication, authorization, and deployed the
-                        application on Firebase Hosting.</p>
-                    <p>Admin Features: Created an Admin page and integrated the YouTube API to manage video-based
-                        lessons.</p>
+
+                <!-- Tools -->
+                <div class="skill-item"><i class="fas fa-tools"></i>
+                    <p>Git</p>
+                </div>
+                <div class="skill-item"><i class="fab fa-docker"></i>
+                    <p>Docker</p>
+                </div>
+                <div class="skill-item"><i class="fab fa-linux"></i>
+                    <p>Linux</p>
+                </div>
+                <div class="skill-item"><i class="fas fa-edit"></i>
+                    <p>Vim</p>
+                </div>
+                <div class="skill-item"><i class="fab fa-figma"></i>
+                    <p>Figma</p>
                 </div>
             </div>
         </section>
-
-        <section id="miscellaneous">
-            <div class="container">
-                <h2>Miscellaneous Projects 🔍</h2>
-                <div class="projects-grid">
-                    <div class="project">
-                        <a href="https://github.com/tranlequocthong313/private_clinic" target="_blank">
-                            <h3>Private Clinic</h3>
-                        </a>
-                        <a href="https://github.com/tranlequocthong313/private_clinic" target="_blank">GitHub Repo <i
-                                class="fab fa-github"></i></a>
-                        <p>A private clinic management web application built with Flask.</p>
-                    </div>
-                    <div class="project">
-                        <a href="https://github.com/tranlequocthong313/cryptography_online" target="_blank">
-                            <h3>Cryptography Online</h3>
-                        </a>
-                        <a href="https://github.com/tranlequocthong313/cryptography_online" target="_blank">GitHub Repo
-                            <i class="fab fa-github"></i></a>
-                        <p>An online cryptography tool built with Flask.</p>
-                    </div>
-                    <div class="project">
-                        <a href="https://github.com/tranlequocthong313/download-youtube-video" target="_blank">
-                            <h3>Download YouTube Video</h3>
-                        </a>
-                        <a href="https://github.com/tranlequocthong313/download-youtube-video" target="_blank">GitHub
-                            Repo <i class="fab fa-github"></i></a>
-                        <p>A YouTube video downloader tool built with Flask.</p>
-                    </div>
-                    <div class="project">
-                        <a href="https://github.com/tranlequocthong313/screen_capture_winform" target="_blank">
-                            <h3>Screen Capture</h3>
-                        </a>
-                        <a href="https://github.com/tranlequocthong313/screen_capture_winform" target="_blank">GitHub
-                            Repo <i class="fab fa-github"></i></a>
-                        <p>A WinForms application for capturing screenshots.</p>
-                    </div>
-                    <div class="project">
-                        <a href="https://github.com/tranlequocthong313/chat-app-django" target="_blank">
-                            <h3>Chat App</h3>
-                        </a>
-                        <a href="https://github.com/tranlequocthong313/chat-app-django" target="_blank">GitHub Repo <i
-                                class="fab fa-github"></i></a>
-                        <p>A chat application built with Django.</p>
-                    </div>
-                    <div class="project">
-                        <a href="https://github.com/tranlequocthong313/clock_winform" target="_blank">
-                            <h3>Clock</h3>
-                        </a>
-                        <a href="https://github.com/tranlequocthong313/clock_winform" target="_blank">GitHub Repo <i
-                                class="fab fa-github"></i></a>
-                        <p>A WinForms application that displays a clock.</p>
-                    </div>
-                    <div class="project">
-                        <a href="https://github.com/tranlequocthong313/quiz_game_vuejs" target="_blank">
-                            <h3>Quiz Game</h3>
-                        </a>
-                        <a href="https://github.com/tranlequocthong313/quiz_game_vuejs" target="_blank">GitHub Repo <i
-                                class="fab fa-github"></i></a>
-                        <p>A quiz game built with Vue.js.</p>
-                    </div>
-                    <div class="project">
-                        <a href="https://github.com/tranlequocthong313/game_flipping_image_winform" target="_blank">
-                            <h3>Flipping Image</h3>
-                        </a>
-                        <a href="https://github.com/tranlequocthong313/game_flipping_image_winform"
-                            target="_blank">GitHub Repo <i class="fab fa-github"></i></a>
-                        <p>A WinForms application for a flipping image game.</p>
-                    </div>
-                </div>
-            </div>
+    </div>
+    <div id="contact_container" class="container">
+        <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+        <h1>contact.</h1>
+        <section>
+            <h2>contact me</h2>
+            <form id="contact_form">
+                <input type="text" name="from_name" placeholder="Name" required>
+                <input type="email" name="from_email" placeholder="Email" required><br>
+                <textarea name="message" placeholder="Your message" required rows="5"></textarea><br>
+                <button class="btn_one">Send</button>
+            </form>
         </section>
-
-        <section id="interests">
-            <div class="container">
-                <h2>Interests 🎨</h2>
-                <p>I enjoy a range of activities including:</p>
-                <ul>
-                    <li>Art & Design</li>
-                    <li>Gaming</li>
-                    <li>Reading</li>
-                    <li>Exploring New Technologies</li>
-                </ul>
-
-                <h2>Gallery 🌟</h2>
-                <div class="showcase">
-                    <div class="showcase-category">
-                        <h3>Pixel Art</h3>
-                        <div class="showcase-items">
-                            <div class="showcase-item">
-                                <img src="./images/galleries/jpeg" alt="Pixel Art 2">
-                            </div>
-                            <div class="showcase-item">
-                                <img src="./images/galleries/jpeg2" alt="Pixel Art 3">
-                            </div>
-                            <div class="showcase-item">
-                                <img src="./images/galleries/Kid.jpeg" alt="Pixel Art 4">
-                            </div>
-                            <div class="showcase-item">
-                                <img src="./images/galleries/unnamed.png" alt="Pixel Art 1">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="showcase-category">
-                        <h3>Drawings</h3>
-                        <div class="showcase-items">
-                            <div class="showcase-item">
-                                <img src="./images/galleries/Drawing.jpeg" alt="Drawing 1">
-                            </div>
-                            <div class="showcase-item">
-                                <img src="./images/galleries/Scenery.jpeg" alt="Scenery 1">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="showcase-category">
-                        <h3>Travel & Adventure</h3>
-                        <div class="showcase-items">
-                            <div class="showcase-item">
-                                <img src="./images/travels/3d4ad24d22c68698dfd7.jpg" alt="Travel Adventure 2">
-                            </div>
-                            <div class="showcase-item">
-                                <img src="./images/travels/21bc2111d19a75c42c8b.jpg" alt="Travel Adventure 1">
-                            </div>
-                            <div class="showcase-item">
-                                <img src="./images/travels/55d9d7f7277c8322da6d.jpg" alt="Travel Adventure 3">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="books">
-            <div class="container">
-                <h2>Books I Recommend 📚</h2>
-
-                <h3>Specialized Books</h3>
-                <div class="book-showcase">
-                    <div class="book-item">
-                        <img src="./images/books/cleancode.jpeg" alt="Clean Code">
-                        <h4>Clean Code</h4>
-                        <p>A handbook of agile software craftsmanship that emphasizes writing readable, maintainable
-                            code.</p>
-                    </div>
-                    <div class="book-item">
-                        <img src="./images/books/clean.jpeg" alt="Clean Architecture">
-                        <h4>Clean Architecture</h4>
-                        <p>Focuses on designing scalable, maintainable software systems with clean architecture
-                            principles.</p>
-                    </div>
-                    <div class="book-item">
-                        <img src="./images/books/docker-deep-dive-1.jpg" alt="Docker Deep Dive">
-                        <h4>Docker Deep Dive</h4>
-                        <p>An in-depth guide to Docker, covering containerization, orchestration, and best practices.
-                        </p>
-                    </div>
-                    <div class="book-item">
-                        <img src="./images/books/git.jpeg" alt="Learn Git in a Month of Lunches">
-                        <h4>Learn Git in a Month of Lunches</h4>
-                        <p>A beginner-friendly guide to Git, with a focus on practical skills and real-world usage.</p>
-                    </div>
-                    <div class="book-item">
-                        <img src="./images/books/hf_desgin_patterns_.jpg" alt="Head First Design Patterns">
-                        <h4>Head First Design Patterns</h4>
-                        <p>Introduces design patterns in a visually engaging and easy-to-understand manner.</p>
-                    </div>
-                    <div class="book-item">
-                        <img src="./images/books/hf_ooad.jpeg" alt="Head First Object-Oriented Analysis and Design">
-                        <h4>Head First Object-Oriented Analysis and Design</h4>
-                        <p>Teaches object-oriented concepts through practical, engaging examples.</p>
-                    </div>
-                    <div class="book-item">
-                        <img src="./images/books/how.jpg" alt="How Do It Know">
-                        <h4>How Do It Know</h4>
-                        <p>Explains the fundamentals of computer operation in an easy-to-understand way.</p>
-                    </div>
-                    <div class="book-item">
-                        <img src="./images/books/pm.jpg" alt="Project Management for Unofficial Project Manager">
-                        <h4>Project Management for Unofficial Project Manager</h4>
-                        <p>A practical guide to project management for those without formal training.</p>
-                    </div>
-                    <div class="book-item">
-                        <img src="./images/books/softwarecareer.jpg"
-                            alt="The Complete Software Developer's Career Guide">
-                        <h4>The Complete Software Developer's Career Guide</h4>
-                        <p>Comprehensive advice on how to build a successful career in software development.</p>
-                    </div>
-                </div>
-
-                <h3>Non-Specialized Books</h3>
-                <div class="book-showcase">
-                    <div class="book-item">
-                        <img src="./images/books/ben.jpg" alt="Benjamin Franklin: An American Life">
-                        <h4>Benjamin Franklin: An American Life</h4>
-                        <p>A detailed biography of Benjamin Franklin, highlighting his contributions as a founding
-                            father of the United States.</p>
-                    </div>
-                    <div class="book-item">
-                        <img src="./images/books/leo.jpeg" alt="Leonardo da Vinci">
-                        <h4>Leonardo da Vinci</h4>
-                        <p>A biography by Walter Isaacson that delves into the life of Leonardo da Vinci, exploring his
-                            genius and creativity.</p>
-                    </div>
-                    <div class="book-item">
-                        <img src="./images/books/steve_.jpg" alt="Steve Jobs">
-                        <h4>Steve Jobs</h4>
-                        <p>Walter Isaacson’s in-depth biography of Steve Jobs, detailing his life, innovations, and
-                            impact on technology.</p>
-                    </div>
-                    <div class="book-item">
-                        <img src="./images/books/21lesson.jpg" alt="21 Lessons for the 21st Century">
-                        <h4>21 Lessons for the 21st Century</h4>
-                        <p>A thought-provoking exploration of the challenges and opportunities of the 21st century by
-                            Yuval Noah Harari.</p>
-                    </div>
-
-                    <div class="book-item">
-                        <img src="./images/books/davincicode_.jpg" alt="The Da Vinci Code">
-                        <h4>The Da Vinci Code</h4>
-                        <p>A thrilling novel by Dan Brown that combines mystery, history, and religion in a fast-paced
-                            adventure.</p>
-                    </div>
-                    <div class="book-item">
-                        <img src="./images/books/kaneabel.jpg" alt="Kane and Abel">
-                        <h4>Kane and Abel</h4>
-                        <p>Jeffrey Archer’s epic tale of two men born worlds apart, whose lives become intertwined in a
-                            lifelong rivalry.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-    </main>
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Trần Lê Quốc Thống. All rights reserved.</p>
-        </div>
-    </footer>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </body>
 
 </html>
