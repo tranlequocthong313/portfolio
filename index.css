@@ -646,3 +646,23 @@ a.disabled {
 .skill__logo:hover {
     transform: scale(1.1);
 }
+
+
+.blog__container {
+    display: block;
+    gap: var(--gutter-normal);
+    margin-top: var(--gutter-medium);
+}
+
+.blog__item {
+    background-color: var(--light-gray);
+    padding: var(--gutter-small);
+    border-radius: 0.5rem;
+    margin-bottom: var(--gutter-normal);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog__item:hover {
+    transform: translateY(-1rem);
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+}
