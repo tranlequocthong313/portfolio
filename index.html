@@ -5,15 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Put your site title here -->
-    <title>
-        Tran Le Quoc Thong | A Web Developer based in Ho Chi Minh City, Vietnam.
-    </title>
-
-    <meta name="description" content="Add small description of yourslef.">
-    <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
-    <meta name="keywords" content="Put your name, skills and some coding keywords" />
+    <title>Tran Le Quoc Thong | A Web Developer based in Ho Chi Minh City, Vietnam.</title>
+    <meta name="description" content="Passionate web developer creating dynamic and user-friendly applications.">
+    <meta name="keywords" content="Tran Le Quoc Thong, Web Developer, React, Python, Java, Typescript, Ho Chi Minh City" />
     <link rel="stylesheet" href="./index.css" />
+    <!-- Add AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <!-- Google tag (gtag.js) -->
@@ -22,36 +19,27 @@
     window.dataLayer = window.dataLayer || [];
     function gtag() {dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-3S7VB8GXP3');
 </script>
 
 <body>
-
     <!-- ***** Header ***** -->
-
     <header class="header" role="banner" id="top">
         <div class="row">
             <nav class="nav" role="navigation">
-                <ul class="nav__items">
+                <ul class="nav__items" data-aos="fade-down" data-aos-duration="800">
                     <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
                     <li class="nav__item"><a href="#blog" class="nav__link">Blog</a></li>
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link">About</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#contact" class="nav__link">Contact</a>
-                    </li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                 </ul>
             </nav>
         </div>
         <div class="header__text-box row">
-            <div class="header__text">
+            <div class="header__text" data-aos="fade-up" data-aos-duration="1000">
                 <h1 class="heading-primary">
-                    <!-- Replace the following name with your name -->
                     <span>Tran Le Quoc Thong</span>
                 </h1>
-                <!-- Put a small paragraph about yourself -->
                 <p>A Web Developer based in Ho Chi Minh City, Vietnam.</p>
                 <a href="#contact" class="btn btn--pink">Get in touch</a>
             </div>
@@ -59,23 +47,15 @@
     </header>
 
     <main role="main">
-
         <!-- ***** Work ***** -->
-
         <section class="work" id="work">
             <div class="row">
-                <h2>My Work</h2>
+                <h2 data-aos="zoom-in" data-aos-duration="800">My Work</h2>
                 <div class="work__boxes">
-
-                    <!-- Each div with the work__box class is a project. -->
-
-                    <div class="work__box">
+                    <div class="work__box" data-aos="fade-right" data-aos-delay="100" data-aos-duration="800">
                         <div class="work__text">
                             <h3>Audio Steganography</h3>
-                            <p>
-                                A project focused on securely embedding and extracting information within audio files
-                                using advanced encryption and compression techniques.
-                            </p>
+                            <p>A project focused on securely embedding and extracting information within audio files using advanced encryption and compression techniques.</p>
                             <ul class="work__list">
                                 <li>Python</li>
                                 <li>Typescript</li>
@@ -83,13 +63,9 @@
                                 <li>ReactJS</li>
                                 <li>MUI</li>
                             </ul>
-
                             <div class="work__links">
-                                <a href="https://cipher-nest-fe.vercel.app/" target="_blank" class="link__text">
-                                    Visit Site <span>&rarr;</span>
-                                </a>
-                                <a href="https://github.com/tranlequocthong313/CipherNest" title="View Source Code"
-                                    target="_blank">
+                                <a href="https://cipher-nest-fe.vercel.app/" target="_blank" class="link__text">Visit Site <span>→</span></a>
+                                <a href="https://github.com/tranlequocthong313/CipherNest" title="View Source Code" target="_blank">
                                     <img src="./images/github.svg" class="work__code" alt="GitHub">
                                 </a>
                             </div>
@@ -99,29 +75,22 @@
                         </div>
                     </div>
 
-                    <div class="work__box">
+                    <div class="work__box" data-aos="fade-left" data-aos-delay="200" data-aos-duration="800">
                         <div class="work__text">
                             <h3>Maintenance Management</h3>
-                            <p>
-                                A system designed to streamline and optimize maintenance scheduling, tracking, and
-                                reporting for equipment management.
-                            </p>
+                            <p>A system designed to streamline and optimize maintenance scheduling, tracking, and reporting for equipment management.</p>
                             <ul class="work__list">
                                 <li>Java</li>
                                 <li>Typescript</li>
                                 <li>Spring MVC</li>
                                 <li>ReactJS</li>
                                 <li>MySQL</li>
-                                <li>MUI Bootstrap</li>
+                                <li>MUI/Bootstrap</li>
                             </ul>
-
                             <div class="work__links">
-                                <a href="#" class="link__text disabled" target="_blank">
-                                    Visit Site <span>&rarr;</span>
-                                </a>
+                                <a href="#" class="link__text disabled" target="_blank">Visit Site <span>→</span></a>
                                 <a href="https://github.com/tranlequocthong313/apparatus" target="_blank">
-                                    <img src="./images/github.svg" class="work__code" title="View Source Code"
-                                        alt="GitHub">
+                                    <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
                                 </a>
                             </div>
                         </div>
@@ -130,13 +99,10 @@
                         </div>
                     </div>
 
-                    <div class="work__box">
+                    <div class="work__box" data-aos="fade-right" data-aos-delay="300" data-aos-duration="800">
                         <div class="work__text">
                             <h3>Clinic Management</h3>
-                            <p>
-                                A system for managing clinic operations, including patient records, appointments, and
-                                billing.
-                            </p>
+                            <p>A system for managing clinic operations, including patient records, appointments, and billing.</p>
                             <ul class="work__list">
                                 <li>Python</li>
                                 <li>Javascript</li>
@@ -144,14 +110,10 @@
                                 <li>MySQL</li>
                                 <li>Bootstrap</li>
                             </ul>
-
                             <div class="work__links">
-                                <a href="https://private-clinic.onrender.com/" class="link__text" target="_blank">
-                                    Visit Site <span>&rarr;</span>
-                                </a>
+                                <a href="https://private-clinic.onrender.com/" class="link__text" target="_blank">Visit Site <span>→</span></a>
                                 <a href="https://github.com/tranlequocthong313/private_clinic" target="_blank">
-                                    <img src="./images/github.svg" class="work__code" title="View Source Code"
-                                        alt="GitHub">
+                                    <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
                                 </a>
                             </div>
                         </div>
@@ -160,26 +122,19 @@
                         </div>
                     </div>
 
-                    <div class="work__box">
+                    <div class="work__box" data-aos="fade-left" data-aos-delay="400" data-aos-duration="800">
                         <div class="work__text">
                             <h3>UTE Social Media Management</h3>
-                            <p>
-                                A dashboard for managing university social network activities, including user
-                                engagement, content moderation, and analytics.
-                            </p>
+                            <p>A dashboard for managing university social network activities, including user engagement, content moderation, and analytics.</p>
                             <ul class="work__list">
                                 <li>Javascript</li>
                                 <li>VueJS</li>
                                 <li>MUI</li>
                             </ul>
-
                             <div class="work__links">
-                                <a href="#" class="link__text disabled" target="_blank">
-                                    Visit Site <span>&rarr;</span>
-                                </a>
+                                <a href="#" class="link__text disabled" target="_blank">Visit Site <span>→</span></a>
                                 <a href="https://github.com/tranlequocthong313/ute_social_network" target="_blank">
-                                    <img src="./images/github.svg" class="work__code" title="View Source Code"
-                                        alt="GitHub">
+                                    <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
                                 </a>
                             </div>
                         </div>
@@ -188,13 +143,10 @@
                         </div>
                     </div>
 
-                    <div class="work__box">
+                    <div class="work__box" data-aos="fade-right" data-aos-delay="500" data-aos-duration="800">
                         <div class="work__text">
                             <h3>E-Learning Platform</h3>
-                            <p>
-                                A platform for delivering and managing online learning experiences, including course
-                                content, blogs, and interactive features.
-                            </p>
+                            <p>A platform for delivering and managing online learning experiences, including course content, blogs, and interactive features.</p>
                             <ul class="work__list">
                                 <li>Javascript</li>
                                 <li>NodeJS</li>
@@ -203,14 +155,10 @@
                                 <li>MongoDB</li>
                                 <li>Bootstrap</li>
                             </ul>
-
                             <div class="work__links">
-                                <a href="#" class="link__text disabled" target="_blank">
-                                    Visit Site <span>&rarr;</span>
-                                </a>
+                                <a href="#" class="link__text disabled" target="_blank">Visit Site <span>→</span></a>
                                 <a href="https://github.com/tranlequocthong313/f8cloneBE" target="_blank">
-                                    <img src="./images/github.svg" class="work__code" title="View Source Code"
-                                        alt="GitHub">
+                                    <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
                                 </a>
                             </div>
                         </div>
@@ -223,166 +171,130 @@
         </section>
 
         <!-- ***** Blog ***** -->
-
         <section class="blog" id="blog">
             <div class="row">
-                <h2>Blog</h2>
+                <h2 data-aos="zoom-in" data-aos-duration="800">Blog</h2>
                 <div class="blog__container">
-                    <article class="blog__item">
+                    <article class="blog__item" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
                         <h3 class="blog__title">The Truth About "Hoisting" in JavaScript You Might Not Know</h3>
-                        <p class="blog__description">A detailed explanation of JavaScript's hoisting behavior and common
-                            misconceptions.</p>
-                        <a href="https://viblo.asia/p/su-that-ve-hoisting-trong-javascript-ma-co-the-ban-chua-biet-WR5JRAM74Gv"
-                            class="btn" target="_blank">Read More</a>
+                        <p class="blog__description">A detailed explanation of JavaScript's hoisting behavior and common misconceptions.</p>
+                        <a href="https://viblo.asia/p/su-that-ve-hoisting-trong-javascript-ma-co-the-ban-chua-biet-WR5JRAM74Gv" class="btn" target="_blank">Read More</a>
                     </article>
-                    <article class="blog__item">
+                    <article class="blog__item" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
                         <h3 class="blog__title">Are You Understanding Prototypes in JavaScript Correctly?</h3>
-                        <p class="blog__description">Explore the concept of prototypes in JavaScript and clarify common
-                            misunderstandings.</p>
-                        <a href="https://viblo.asia/p/ban-co-dang-hieu-dung-ve-prototype-trong-javascript-m2vJPr6aVeK"
-                            class="btn" target="_blank">Read More</a>
+                        <p class="blog__description">Explore the concept of prototypes in JavaScript and clarify common misunderstandings.</p>
+                        <a href="https://viblo.asia/p/ban-co-dang-hieu-dung-ve-prototype-trong-javascript-m2vJPr6aVeK" class="btn" target="_blank">Read More</a>
                     </article>
                 </div>
             </div>
         </section>
 
         <!-- ***** About ***** -->
-
         <section class="about" id="about">
             <div class="row">
-                <h2>About Me</h2>
+                <h2 data-aos="zoom-in" data-aos-duration="800">About Me</h2>
                 <div class="about__content">
-                    <div class="about__text">
-                        <!-- Replace the below paragraph with info about yourself -->
-                        <p>
-                            I am a final-year IT student with a deep passion for web development and a strong foundation
-                            in both
-                            frontend and backend technologies. My journey in tech has equipped me with a versatile skill
-                            set,
-                            allowing me to create dynamic and user-friendly web applications. I have a keen eye for
-                            detail, a love
-                            for problem-solving, and a dedication to continuous learning.
-                        </p>
-                        <!-- Provide a link to your resume -->
+                    <div class="about__text" data-aos="fade-right" data-aos-duration="800">
+                        <p>I am a final-year IT student with a deep passion for web development and a strong foundation in both frontend and backend technologies. My journey in tech has equipped me with a versatile skill set, allowing me to create dynamic and user-friendly web applications. I have a keen eye for detail, a love for problem-solving, and a dedication to continuous learning.</p>
                         <a href="./resume.pdf" target="_blank" class="btn">My Resume</a>
                     </div>
-
-                    <div class="about__photo-container">
-                        <!-- Add a nice photo of yourself -->
-                        <img class="about__photo" src="./images/about.jpeg" alt="" />
+                    <div class="about__photo-container" data-aos="fade-left" data-aos-duration="800">
+                        <img class="about__photo" src="./images/about.jpeg" alt="Tran Le Quoc Thong" />
                     </div>
                 </div>
             </div>
         </section>
-    </main>
 
-    <section class="skill" id="skill">
-        <div class="row">
-            <h2>Languages, Tools & Frameworks</h2>
-            <div class="skill__content">
-                <!-- Programming Languages -->
-                <div class="skill__category">
-                    <h3>Programming Languages</h3>
-                    <div class="skill__grid">
-                        <img src="./images/python.svg" title="Python" class="skill__logo" alt="Python">
-                        <img src="./images/typescript.svg" title="Typescript" class="skill__logo" alt="Typescript">
-                        <img src="./images/javascript.svg" title="Javascript" class="skill__logo" alt="Javascript">
-                        <img src="./images/java.svg" title="Java" class="skill__logo" alt="Java">
-                        <img src="./images/csharp.svg" title="C#" class="skill__logo" alt="C#">
-                        <img src="./images/cplusplus.svg" title="C++" class="skill__logo" alt="C++">
+        <!-- ***** Skills ***** -->
+        <section class="skill" id="skill">
+            <div class="row">
+                <h2 data-aos="zoom-in" data-aos-duration="800">Languages, Tools & Frameworks</h2>
+                <div class="skill__content">
+                    <div class="skill__category" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+                        <h3>Programming Languages</h3>
+                        <div class="skill__grid">
+                            <img src="./images/python.svg" title="Python" class="skill__logo" alt="Python">
+                            <img src="./images/typescript.svg" title="Typescript" class="skill__logo" alt="Typescript">
+                            <img src="./images/javascript.svg" title="Javascript" class="skill__logo" alt="Javascript">
+                            <img src="./images/java.svg" title="Java" class="skill__logo" alt="Java">
+                            <img src="./images/csharp.svg" title="C#" class="skill__logo" alt="C#">
+                            <img src="./images/cplusplus.svg" title="C++" class="skill__logo" alt="C++">
+                        </div>
                     </div>
-                </div>
-                <!-- Frameworks -->
-                <div class="skill__category">
-                    <h3>Frameworks</h3>
-                    <div class="skill__grid">
-                        <img src="./images/django.svg" title="Django" class="skill__logo" alt="Django">
-                        <img src="./images/express.svg" title="Express" class="skill__logo" alt="Express">
-                        <img src="./images/flask.svg" title="Flask" class="skill__logo" alt="Flask">
-                        <img src="./images/springmvc.svg" title="Spring MVC" class="skill__logo" alt="Spring MVC">
-                        <img src="./images/react.svg" title="ReactJS & React Native" class="skill__logo" alt="React">
-                        <img src="./images/vuejs.svg" title="VueJS" class="skill__logo" alt="VueJS">
+                    <div class="skill__category" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+                        <h3>Frameworks</h3>
+                        <div class="skill__grid">
+                            <img src="./images/django.svg" title="Django" class="skill__logo" alt="Django">
+                            <img src="./images/express.svg" title="Express" class="skill__logo" alt="Express">
+                            <img src="./images/flask.svg" title="Flask" class="skill__logo" alt="Flask">
+                            <img src="./images/springmvc.svg" title="Spring MVC" class="skill__logo" alt="Spring MVC">
+                            <img src="./images/react.svg" title="ReactJS & React Native" class="skill__logo" alt="React">
+                            <img src="./images/vuejs.svg" title="VueJS" class="skill__logo" alt="VueJS">
+                        </div>
                     </div>
-                </div>
-                <!-- Databases -->
-                <div class="skill__category">
-                    <h3>Databases</h3>
-                    <div class="skill__grid">
-                        <img src="./images/mysql.svg" title="MySQL" class="skill__logo" alt="MySQL">
-                        <img src="./images/mssql.svg" title="MSSQL" class="skill__logo" alt="MSSQL">
-                        <img src="./images/mongodb.svg" title="MongoDB" class="skill__logo" alt="MongoDB">
-                        <img src="./images/redis.svg" title="Redis" class="skill__logo" alt="Redis">
+                    <div class="skill__category" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
+                        <h3>Databases</h3>
+                        <div class="skill__grid">
+                            <img src="./images/mysql.svg" title="MySQL" class="skill__logo" alt="MySQL">
+                            <img src="./images/mssql.svg" title="MSSQL" class="skill__logo" alt="MSSQL">
+                            <img src="./images/mongodb.svg" title="MongoDB" class="skill__logo" alt="MongoDB">
+                            <img src="./images/redis.svg" title="Redis" class="skill__logo" alt="Redis">
+                        </div>
                     </div>
-                </div>
-                <!-- Tools -->
-                <div class="skill__category">
-                    <h3>Tools</h3>
-                    <div class="skill__grid">
-                        <img src="./images/git.svg" title="Git" class="skill__logo" alt="Git">
-                        <img src="./images/docker.svg" title="Docker" class="skill__logo" alt="Docker">
-                        <img src="./images/linux.svg" title="Linux" class="skill__logo" alt="Linux">
-                        <img src="./images/vim.svg" title="Vim" class="skill__logo" alt="Vim">
-                        <img src="./images/figma.svg" title="Figma" class="skill__logo" alt="Figma">
+                    <div class="skill__category" data-aos="fade-up" data-aos-delay="400" data-aos-duration="800">
+                        <h3>Tools</h3>
+                        <div class="skill__grid">
+                            <img src="./images/git.svg" title="Git" class="skill__logo" alt="Git">
+                            <img src="./images/docker.svg" title="Docker" class="skill__logo" alt="Docker">
+                            <img src="./images/linux.svg" title="Linux" class="skill__logo" alt="Linux">
+                            <img src="./images/vim.svg" title="Vim" class="skill__logo" alt="Vim">
+                            <img src="./images/figma.svg" title="Figma" class="skill__logo" alt="Figma">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ***** Contact ***** -->
-
-    <section class="contact" id="contact">
-        <div class="row">
-            <h2>Get in Touch</h2>
-            <div class="contact__info">
-                <p>
-                    Are you searching for a passionate and motivated intern or fresher to join your team? Whether you
-                    need help with a tech project, are seeking advice, or just want to discuss potential opportunities,
-                    I’d love to connect!
-
-                    As a current student eager to start my career, I am open to internships and entry-level positions
-                    where I can apply my skills and grow professionally. The fastest way to reach me is via email. I’ll
-                    do my best to get back to you as soon as possible. 😊
-
-                    Looking forward to hearing from you!
-                </p>
-                <!-- Replace the email with yours -->
-                <a href="mailto:tranlequocthong313@gmail.com" class="btn">tranlequocthong313@gmail.com</a>
+        <!-- ***** Contact ***** -->
+        <section class="contact" id="contact">
+            <div class="row">
+                <h2 data-aos="zoom-in" data-aos-duration="800">Get in Touch</h2>
+                <div class="contact__info" data-aos="fade-up" data-aos-duration="800">
+                    <p>Are you searching for a passionate and motivated intern or fresher to join your team? Whether you need help with a tech project, are seeking advice, or just want to discuss potential opportunities, I’d love to connect! As a current student eager to start my career, I am open to internships and entry-level positions where I can apply my skills and grow professionally. The fastest way to reach me is via email. I’ll do my best to get back to you as soon as possible. 😊 Looking forward to hearing from you!</p>
+                    <a href="mailto:tranlequocthong313@gmail.com" class="btn">tranlequocthong313@gmail.com</a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ***** Footer ***** -->
+        <!-- ***** Footer ***** -->
+        <footer role="contentinfo" class="footer">
+            <div class="row">
+                <ul class="footer__social-links" data-aos="fade-up" data-aos-duration="800">
+                    <li class="footer__social-link-item">
+                        <a href="https://www.linkedin.com/in/tranlequocthong313/" target="_blank">
+                            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+                        </a>
+                    </li>
+                    <li class="footer__social-link-item">
+                        <a href="https://github.com/tranlequocthong313/" title="Link to Github Profile" target="_blank">
+                            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+                        </a>
+                    </li>
+                    <li class="footer__social-link-item">
+                        <a href="https://zalo.me/0909943501" target="_blank">
+                            <img src="./images/zalo.svg" title="Link to Zalo Profile" class="footer__social-image" alt="Zalo">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
 
-    <footer role="contentinfo" class="footer">
-        <div class="row">
-            <!-- Update the links to point to your accounts -->
-            <ul class="footer__social-links">
-                <li class="footer__social-link-item">
-                    <a href="https://www.linkedin.com/in/tranlequocthong313/" target="_blank">
-                        <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image"
-                            alt="Linkedin">
-                    </a>
-                </li>
-                <li class="footer__social-link-item">
-                    <a href="https://github.com/tranlequocthong313/" title="Link to Github Profile" target="_blank">
-                        <img src="./images/github.svg" class="footer__social-image" alt="Github">
-                    </a>
-                </li>
-                <li class="footer__social-link-item">
-                    <a href="https://zalo.me/0909943501" target="_blank">
-                        <img src="./images/zalo.svg" title="Link to Zalo Profile" class="footer__social-image"
-                            alt="Zalo">
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </footer>
+        <a href="#top" class="back-to-top" title="Back to Top">
+            <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image" />
+        </a>
 
-    <a href="#top" class="back-to-top" title="Back to Top">
-        <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image" />
-    </a>
-    <script src="./index.js"></script>
-</body>
-
+        <!-- Add AOS JavaScript -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="./index.js"></script>
+    </body>
 </html>
