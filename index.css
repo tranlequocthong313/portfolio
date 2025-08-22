@@ -42,7 +42,7 @@
 
     --container-max-width: 1180px;
     --container-normal-width: 800px;
-    --container-medium-width: 700px;
+    --container-medium-width: 760px;
     --container-small-width: 500px;
 
     --gutter-huge: 12rem;
@@ -213,6 +213,11 @@ body:not(.user-is-tabbing) a:focus {
 .link:hover {
     color: var(--pink);
 }
+
+.no-margin {
+    margin: 0;
+}
+
 
 .btn {
     position: relative;
