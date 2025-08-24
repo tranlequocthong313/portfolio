@@ -1,299 +1,494 @@
 <!DOCTYPE html>
+<!-- YouTube: CodeWithHim -->
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Portfolio - tranlequocthong313</title>
+        <script src="https://unpkg.com/@phosphor-icons/web"></script>
+        <link rel="stylesheet" href="style.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Tran Le Quoc Thong | A Frontend Developer based in Ho Chi Minh City, Vietnam.</title>
-    <meta name="description" content="Passionate web developer creating dynamic and user-friendly applications.">
-    <meta name="keywords" content="Tran Le Quoc Thong, Frontend Developer, React, Javascript, Typescript, Ho Chi Minh City" />
-    <link rel="stylesheet" href="./index.css" />
-    <!-- Add AOS CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-</head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3S7VB8GXP3"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-3S7VB8GXP3');
-</script>
-
-<body>
-    <!-- ***** Header ***** -->
-    <header class="header" role="banner" id="top">
-        <div class="row">
-            <nav class="nav" role="navigation">
-                <ul class="nav__items" data-aos="fade-down" data-aos-duration="800">
-                    <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                    <li class="nav__item"><a href="#blog" class="nav__link">Blog</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="header__text-box row">
-            <div class="header__text" data-aos="fade-up" data-aos-duration="1000">
-                <h1 class="heading-primary">
-                    <span>Tran Le Quoc Thong</span>
-                </h1>
-                <p>A Frontend Developer based in Ho Chi Minh City, Vietnam.</p>
-                <a href="#contact" class="btn btn--pink">Get in touch</a>
+    <body>
+        <header>
+            <a href="#home" class="logo">tranlequocthong313.</a>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
+            <ul class="navmenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </header>
+
+        <section class="home" id="home">
+            <div class="home-text">
+                <h2>
+                    Hello, I'm Tran Le Quoc Thong
+                    <i class="ph-bold ph-hand-waving"></i>
+                </h2>
+                <h3>Frontend Developer</h3>
+                <p>
+                    A Frontend Developer specializing in React and modern
+                    JavaScript. I build responsive, performant web applications
+                    with a focus on clean code, great user experience, and
+                    continuous learning.
+                </p>
+                <div class="home-btn">
+                    <a href="#contact" class="btn">Contact Info</a>
+                    <a href="/resume.pdf" target="_blank" class="btn"
+                        >Download CV <i class="ph ph-read-cv-logo"></i
+                    ></a>
+                </div>
+            </div>
+            <div class="home-png">
+                <img
+                    src="images/about.jpg"
+                    width="356"
+                    height="350"
+                    alt="Home Image"
+                />
+            </div>
+        </section>
+        <span class="label">Follow Me</span>
+        <div class="socials-icons">
+            <a
+                href="https://www.linkedin.com/in/tranlequocthong313/"
+                target="_blank"
+                ><i class="ph-bold ph-linkedin-logo"></i
+            ></a>
+            <a href="https://zalo.me/0909943501" target="_blank"
+                ><i class="ph-bold ph-phone"></i
+            ></a>
+            <a href="https://github.com/tranlequocthong313/" target="_blank"
+                ><i class="ph-bold ph-github-logo"></i
+            ></a>
         </div>
-    </header>
+        <a href="#skills" class="scroll-btn"
+            >Scroll Down <i class="ph-bold ph-arrow-bend-right-down"></i
+        ></a>
 
-    <main role="main">
-        <!-- ***** Work ***** -->
-        <section class="work" id="work">
-            <div class="row">
-                <h2 data-aos="zoom-in" data-aos-duration="800">Persoal Projects</h2>
-                <div class="work__boxes">
-                    <div class="work__box" data-aos="fade-right" data-aos-delay="100" data-aos-duration="800">
-                        <div class="work__text">
-                            <h3>Audio Steganography</h3>
-                            <p>A project focused on securely embedding and extracting information within audio files using advanced encryption and compression techniques.</p>
-                            <ul class="work__list">
-                                <li>Python</li>
-                                <li>Typescript</li>
-                                <li>Django</li>
-                                <li>ReactJS</li>
-                                <li>MUI</li>
-                            </ul>
-                            <div class="work__links">
-                                <a href="https://cipher-nest-fe.vercel.app/" target="_blank" class="link__text">Visit Site <span>→</span></a>
-                                <a href="https://github.com/tranlequocthong313/CipherNestFE" title="View Source Code" target="_blank">
-                                    <img src="./images/github.svg" class="work__code" alt="GitHub">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="work__image-box">
-                            <img src="./images/project1.png" class="work__image" alt="Project 1" />
-                        </div>
-                    </div>
-
-                    <div class="work__box" data-aos="fade-right" data-aos-delay="500" data-aos-duration="800">
-                        <div class="work__text">
-                            <h3>E-Learning Platform</h3>
-                            <p>A platform for delivering and managing online learning experiences, including course content, blogs, and interactive features.</p>
-                            <ul class="work__list">
-                                <li>Javascript</li>
-                                <li>NodeJS</li>
-                                <li>Express</li>
-                                <li>React</li>
-                                <li>MongoDB</li>
-                                <li>Bootstrap</li>
-                            </ul>
-                            <div class="work__links">
-                                <a href="https://f8clone-fe.vercel.app/" class="link__text" target="_blank">Visit Site <span>→</span></a>
-                                <a href="https://github.com/tranlequocthong313/f8cloneFE" target="_blank">
-                                    <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="work__image-box">
-                            <img src="./images/project3.png" class="work__image" alt="Project 3" />
-                        </div>
-                    </div>
-
-                    <div class="work__box" data-aos="fade-left" data-aos-delay="400" data-aos-duration="800">
-                        <div class="work__text">
-                            <h3>UTE Social Media Management</h3>
-                            <p>A dashboard for managing university social network activities, including user engagement, content moderation, and analytics.</p>
-                            <ul class="work__list">
-                                <li>Javascript</li>
-                                <li>VueJS</li>
-                                <li>MUI</li>
-                            </ul>
-                            <div class="work__links">
-                                <a href="https://github.com/tranlequocthong313/ute_social_network" target="_blank">
-                                    <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="work__image-box">
-                            <img src="./images/project5.png" class="work__image" alt="Project 3" />
-                        </div>
-                    </div>
-
-                    <div class="work__box" data-aos="fade-left" data-aos-delay="200" data-aos-duration="800">
-                        <div class="work__text">
-                            <h3>Maintenance Management</h3>
-                            <p>A system designed to streamline and optimize maintenance scheduling, tracking, and reporting for equipment management.</p>
-                            <ul class="work__list">
-                                <li>Java</li>
-                                <li>Typescript</li>
-                                <li>Spring MVC</li>
-                                <li>ReactJS</li>
-                                <li>MySQL</li>
-                                <li>MUI/Bootstrap</li>
-                            </ul>
-                            <div class="work__links">
-                                <a href="https://github.com/tranlequocthong313/apparatus" target="_blank">
-                                    <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="work__image-box">
-                            <img src="./images/project2.png" class="work__image" alt="Project 2" />
-                        </div>
-                    </div>
-
-                    <div class="work__box" data-aos="fade-right" data-aos-delay="300" data-aos-duration="800">
-                        <div class="work__text">
-                            <h3>Clinic Management</h3>
-                            <p>A system for managing clinic operations, including patient records, appointments, and billing.</p>
-                            <ul class="work__list">
-                                <li>Python</li>
-                                <li>Javascript</li>
-                                <li>Flask</li>
-                                <li>MySQL</li>
-                                <li>Bootstrap</li>
-                            </ul>
-                            <div class="work__links">
-                                <a href="https://private-clinic.onrender.com/" class="link__text" target="_blank">Visit Site <span>→</span></a>
-                                <a href="https://github.com/tranlequocthong313/private_clinic" target="_blank">
-                                    <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="work__image-box">
-                            <img src="./images/project4.png" class="work__image" alt="Project 3" />
-                        </div>
-                    </div>
+        <!-- Skills Section -->
+        <section class="skills" id="skills">
+            <div class="section-header">
+                <h2>My Skills</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <i class="ph-bold ph-code"></i>
+                    <h3>Frontend Development</h3>
+                    <p>
+                        HTML, CSS, JavaScript, Typescript, React, Redux, MUI,
+                        Bootstrap, SCSS
+                    </p>
+                </div>
+                <div class="skill-card">
+                    <i class="ph-bold ph-device-mobile"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Figma, Photoshop, Canva</p>
+                </div>
+                <div class="skill-card">
+                    <i class="ph-bold ph-database"></i>
+                    <h3>Backend Development</h3>
+                    <p>Node.js, Python, Express, Django, MySQL, Firebase</p>
+                </div>
+                <div class="skill-card">
+                    <i class="ph-bold ph-git-branch"></i>
+                    <h3>Version Control</h3>
+                    <p>Git, GitHub, GitLab, CI/CD</p>
+                </div>
+                <div class="skill-card">
+                    <i class="ph-bold ph-wrench"></i>
+                    <h3>Tools & Technologies</h3>
+                    <p>
+                        VS Code, Figma, Notion, Zoom, Google Chat, Trello, Vim
+                    </p>
+                </div>
+                <div class="skill-card">
+                    <i class="ph-bold ph-users"></i>
+                    <h3>Others</h3>
+                    <p>
+                        Problem Solving, Critical Thinking, Time Management,
+                        Adaptability
+                    </p>
                 </div>
             </div>
         </section>
 
-        <!-- ***** Blog ***** -->
-        <section class="blog" id="blog">
-            <div class="row">
-                <h2 data-aos="zoom-in" data-aos-duration="800">Blog</h2>
-                <div class="blog__container">
-                    <article class="blog__item" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
-                        <h3 class="blog__title">The Truth About "Hoisting" in JavaScript You Might Not Know</h3>
-                        <p class="blog__description">A detailed explanation of JavaScript's hoisting behavior and common misconceptions.</p>
-                        <a href="https://viblo.asia/p/su-that-ve-hoisting-trong-javascript-ma-co-the-ban-chua-biet-WR5JRAM74Gv" class="btn" target="_blank">Read More</a>
-                    </article>
-                    <article class="blog__item" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
-                        <h3 class="blog__title">Are You Understanding Prototypes in JavaScript Correctly?</h3>
-                        <p class="blog__description">Explore the concept of prototypes in JavaScript and clarify common misunderstandings.</p>
-                        <a href="https://viblo.asia/p/ban-co-dang-hieu-dung-ve-prototype-trong-javascript-m2vJPr6aVeK" class="btn" target="_blank">Read More</a>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- ***** About ***** -->
+        <!-- About Section -->
         <section class="about" id="about">
-            <div class="row">
-                <h2 data-aos="zoom-in" data-aos-duration="800">About Me</h2>
-                <div class="about__content">
-                    <div class="about__text" data-aos="fade-right" data-aos-duration="800">
-                        <p>I'm a full-time Frontend Developer with a strong focus on frontend development using React and deep expertise in JavaScript. I have a solid foundation with frontend technologies, allowing me to build responsive, performant, and user-centric web applications. I thrive on solving complex problems, have a sharp eye for detail, and am driven by a constant desire to learn and grow in this ever-evolving field.</p>
-                        <a href="./resume.pdf" target="_blank" class="btn">My Resume</a>
+            <div class="section-header">
+                <h2>About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="images/about.jpeg" alt="About Me Image" />
+                </div>
+                <div class="about-content">
+                    <h3>Frontend Developer</h3>
+                    <p>
+                        I’m a Frontend Developer with hands-on experience
+                        building responsive, scalable web applications using
+                        React, JavaScript, and modern frontend tools. I enjoy
+                        solving complex problems, creating user-friendly
+                        interfaces, and continuously improving my skills in this
+                        ever-evolving field.
+                    </p>
+                    <p>
+                        I’m open to full-time opportunities where I can
+                        contribute to impactful projects, collaborate with a
+                        dynamic team, and grow both personally and
+                        professionally. The best way to reach me is via email,
+                        and I’ll get back to you as soon as I can. Looking
+                        forward to connecting!
+                    </p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <span>Name:</span>
+                            <p>Tran Le Quoc Thong</p>
+                        </div>
+                        <div class="info-item">
+                            <span>Email:</span>
+                            <p>tranlequocthong313@gmail.com</p>
+                        </div>
+                        <div class="info-item">
+                            <span>Location:</span>
+                            <p>Ho Chi Minh, Vietnam</p>
+                        </div>
+                        <div class="info-item">
+                            <span>Freelance:</span>
+                            <p>Available</p>
+                        </div>
                     </div>
-                    <div class="about__photo-container" data-aos="fade-left" data-aos-duration="800">
-                        <img class="about__photo" src="./images/about.jpeg" alt="Tran Le Quoc Thong" />
+                    <a href="/resume.pdf" target="_blank" class="btn"
+                        >Download Resume</a
+                    >
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+            <div class="section-header">
+                <h2>My Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="images/project1.png" alt="Project 1" />
+                    </div>
+                    <div class="project-content">
+                        <h3>Audio Steganography</h3>
+                        <p>
+                            A project focused on securely embedding and
+                            extracting information within audio files using
+                            advanced encryption and compression techniques.
+                        </p>
+                        <div class="project-tags">
+                            <span>Typescript</span>
+                            <span>ReactJS</span>
+                            <span>MUI</span>
+                            <span>Python</span>
+                            <span>Django</span>
+                        </div>
+                        <div class="project-links">
+                            <a
+                                href="https://cipher-nest-fe.vercel.app/"
+                                class="btn"
+                                target="_blank"
+                                >Live Demo</a
+                            >
+                            <a
+                                href="https://github.com/tranlequocthong313/CipherNestFE"
+                                class="btn"
+                                target="_blank"
+                                >View Code I</a
+                            >
+                            <a
+                                href="https://github.com/tranlequocthong313/CipherNest"
+                                class="btn"
+                                target="_blank"
+                                >View Code II</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="images/project3.png" alt="Project 3" />
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Learning Platform</h3>
+                        <p>
+                            A platform for delivering and managing online
+                            learning experiences, including course content,
+                            blogs, and interactive features.
+                        </p>
+                        <div class="project-tags">
+                            <span>Javascript</span>
+                            <span>ReactJS</span>
+                            <span>Bootstrap</span>
+                            <span>NodeJS</span>
+                            <span>ExpressJS</span>
+                            <span>MongoDB</span>
+                            <span>Firebase</span>
+                            <span>Socket.io</span>
+                        </div>
+                        <div class="project-links">
+                            <a
+                                href="https://f8clone-fe.vercel.app/"
+                                target="_blank"
+                                class="btn"
+                                >Live Demo</a
+                            >
+                            <a
+                                href="https://github.com/tranlequocthong313/f8cloneFE"
+                                target="_blank"
+                                class="btn"
+                                >View Code I</a
+                            >
+                            <a
+                                href="https://github.com/tranlequocthong313/f8cloneBE"
+                                target="_blank"
+                                class="btn"
+                                >View Code II</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="images/project2.png" alt="Project 2" />
+                    </div>
+                    <div class="project-content">
+                        <h3>Maintenance Management</h3>
+                        <p>
+                            A system designed to streamline and optimize
+                            maintenance scheduling, tracking, and reporting for
+                            equipment management.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Typescript</span>
+                            <span>ReactJS</span>
+                            <span>MUI</span>
+                            <span>Java</span>
+                            <span>Spring MVC</span>
+                            <span>MySQL</span>
+                            <span>Bootstrap</span>
+                            <span>Google Calendar</span>
+                        </div>
+                        <div class="project-links">
+                            <a
+                                href="https://github.com/tranlequocthong313/forum_apparatus"
+                                target="_blank"
+                                class="btn"
+                                >View Code I</a
+                            >
+                            <a
+                                href="https://github.com/tranlequocthong313/apparatus"
+                                target="_blank"
+                                class="btn"
+                                >View Code II</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="images/project5.png" alt="Project 4" />
+                    </div>
+                    <div class="project-content">
+                        <h3>UTE Social Media Management</h3>
+
+                        <p>
+                            A dashboard for managing university social network
+                            activities, including user engagement, content
+                            moderation, and analytics.
+                        </p>
+                        <div class="project-tags">
+                            <span>Javascript</span>
+                            <span>VueJS</span>
+                            <span>MUI</span>
+                            <span>pinia</span>
+                        </div>
+                        <div class="project-links">
+                            <a
+                                href="https://github.com/tranlequocthong313/ute_social_network"
+                                target="_blank"
+                                class="btn"
+                                >View Code</a
+                            >
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ***** Skills ***** -->
-        <section class="skill" id="skill">
-            <div class="row">
-                <h2 data-aos="zoom-in" data-aos-duration="800">Languages, Tools & Frameworks</h2>
-                <div class="skill__content">
-                    <div class="skill__category" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
-                        <h3>Programming Languages</h3>
-                        <div class="skill__grid">
-                            <img src="./images/javascript.svg" title="Javascript" class="skill__logo" alt="Javascript">
-                            <img src="./images/typescript.svg" title="Typescript" class="skill__logo" alt="Typescript">
-                            <img src="./images/python.svg" title="Python" class="skill__logo" alt="Python">
-                            <img src="./images/java.svg" title="Java" class="skill__logo" alt="Java">
-                        </div>
-                    </div>
-                    <div class="skill__category" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
-                        <h3>Frameworks</h3>
-                        <div class="skill__grid">
-                            <img src="./images/react.svg" title="ReactJS & React Native" class="skill__logo" alt="React">
-                            <img src="./images/django.svg" title="Django" class="skill__logo" alt="Django">
-                            <img src="./images/express.svg" title="Express" class="skill__logo" alt="Express">
-                            <img src="./images/flask.svg" title="Flask" class="skill__logo" alt="Flask">
-                            <img src="./images/springmvc.svg" title="Spring MVC" class="skill__logo" alt="Spring MVC">
-                            <img src="./images/vuejs.svg" title="VueJS" class="skill__logo" alt="VueJS">
-                        </div>
-                    </div>
-                    <div class="skill__category" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
-                        <h3>Databases</h3>
-                        <div class="skill__grid">
-                            <img src="./images/mysql.svg" title="MySQL" class="skill__logo" alt="MySQL">
-                            <img src="./images/mongodb.svg" title="MongoDB" class="skill__logo" alt="MongoDB">
-                            <img src="./images/redis.svg" title="Redis" class="skill__logo" alt="Redis">
-                        </div>
-                    </div>
-                    <div class="skill__category" data-aos="fade-up" data-aos-delay="400" data-aos-duration="800">
-                        <h3>Tools</h3>
-                        <div class="skill__grid">
-                            <img src="./images/git.svg" title="Git" class="skill__logo" alt="Git">
-                            <img src="./images/docker.svg" title="Docker" class="skill__logo" alt="Docker">
-                            <img src="./images/linux.svg" title="Linux" class="skill__logo" alt="Linux">
-                            <img src="./images/vim.svg" title="Vim" class="skill__logo" alt="Vim">
-                            <img src="./images/figma.svg" title="Figma" class="skill__logo" alt="Figma">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ***** Contact ***** -->
+        <!-- Contact Section -->
         <section class="contact" id="contact">
-            <div class="row">
-                <h2 data-aos="zoom-in" data-aos-duration="800">Get in Touch</h2>
-                <div class="contact__info" data-aos="fade-up" data-aos-duration="800">
-                    <p>Are you looking for a dedicated and motivated developer with 1 year of hands-on experience?
-I have been working on real-world projects using modern technologies and am eager to contribute my skills to a dynamic team. I’m open to full-time opportunities where I can apply my knowledge, take on new challenges, and continue growing professionally.
-
-The fastest way to reach me is via email, and I’ll do my best to respond quickly.
-I look forward to connecting with you! 🚀</p>
-                    <a href="mailto:tranlequocthong313@gmail.com" class="btn">tranlequocthong313@gmail.com</a>
+            <div class="section-header">
+                <h2>Contact Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>
+                        Feel free to reach out to me for any questions, project
+                        inquiries, or just to say hello!
+                    </p>
+                    <div class="info-box">
+                        <i class="ph-bold ph-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>tranlequocthong313@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <i class="ph-bold ph-map-pin"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Ho Chi Minh, Vietnam</p>
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <i class="ph-bold ph-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+84909943501</p>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a
+                            href="https://www.linkedin.com/in/tranlequocthong313/"
+                            target="_blank"
+                            ><i class="ph-bold ph-linkedin-logo"></i
+                        ></a>
+                        <a href="https://zalo.me/0909943501" target="_blank"
+                            ><i class="ph-bold ph-phone"></i
+                        ></a>
+                        <a
+                            href="https://github.com/tranlequocthong313/"
+                            target="_blank"
+                            ><i class="ph-bold ph-github-logo"></i
+                        ></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label for="name">Your Name</label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    placeholder="Enter your name"
+                                    required
+                                />
+                            </div>
+                            <div class="input-group">
+                                <label for="email">Your Email</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    placeholder="Enter your email"
+                                    required
+                                />
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label for="subject">Subject</label>
+                            <input
+                                type="text"
+                                id="subject"
+                                placeholder="Enter subject"
+                                required
+                            />
+                        </div>
+                        <div class="input-group">
+                            <label for="message">Message</label>
+                            <textarea
+                                id="message"
+                                rows="6"
+                                placeholder="Enter your message"
+                                required
+                            ></textarea>
+                        </div>
+                        <button type="submit" class="btn">
+                            Send Message
+                            <i class="ph-bold ph-paper-plane-right"></i>
+                        </button>
+                    </form>
                 </div>
             </div>
         </section>
 
-        <!-- ***** Footer ***** -->
-        <footer role="contentinfo" class="footer">
-            <div class="row">
-                <ul class="footer__social-links" data-aos="fade-up" data-aos-duration="800">
-                    <li class="footer__social-link-item">
-                        <a href="https://www.linkedin.com/in/tranlequocthong313/" target="_blank">
-                            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
-                        </a>
-                    </li>
-                    <li class="footer__social-link-item">
-                        <a href="https://github.com/tranlequocthong313/" title="Link to Github Profile" target="_blank">
-                            <img src="./images/github.svg" class="footer__social-image" alt="Github">
-                        </a>
-                    </li>
-                    <li class="footer__social-link-item">
-                        <a href="https://zalo.me/0909943501" target="_blank">
-                            <img src="./images/zalo.svg" title="Link to Zalo Profile" class="footer__social-image" alt="Zalo">
-                        </a>
-                    </li>
-                </ul>
+        <!-- Footer -->
+        <!-- <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-top">
+                    <div class="footer-logo">
+                        <a href="#" class="logo">CodeWithHim.</a>
+                        <p>
+                            Creating beautiful digital experiences with clean
+                            and efficient code.
+                        </p>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">UI/UX Design</a></li>
+                            <li><a href="#">Mobile Development</a></li>
+                            <li><a href="#">Consulting</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-newsletter">
+                        <h4>Newsletter</h4>
+                        <p>Subscribe to receive updates and news</p>
+                        <form class="newsletter-form">
+                            <input
+                                type="email"
+                                placeholder="Enter your email"
+                                required
+                            />
+                            <button type="submit" class="btn">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 CodeWithHim. All Rights Reserved.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="ph-bold ph-linkedin-logo"></i></a>
+                        <a href="#"
+                            ><i class="ph-bold ph-instagram-logo"></i
+                        ></a>
+                        <a href="#"><i class="ph-bold ph-github-logo"></i></a>
+                        <a href="#"><i class="ph-bold ph-twitter-logo"></i></a>
+                    </div>
+                </div>
             </div>
-        </footer>
+        </footer> -->
 
-        <a href="#top" class="back-to-top" title="Back to Top">
-            <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image" />
-        </a>
-
-        <!-- Add AOS JavaScript -->
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="./index.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
